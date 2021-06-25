@@ -14,5 +14,20 @@
 # Java 强类型语言
   1. 强类型语言意味： 必须为每一个变量指定类型。
   2. 8种基本类型： boolean（0 byte），byte（1 byte， 8位）， char, short(2 byte)， int, float（4 byte）， doule, long(8 byte). 4整型，2浮点类型，1字符类型。
+# Java 变量
+  1. Java10 可以使用 var 声明变量类型。 var x = 12 （x为int类型）
+  2. 常量，为final表示，习惯上 final变量为全大写
+  3. 枚举， enum Size = {SMALL, MEDIUM, LARGE}; Size z = Size.SMALL;
+# Java 运算
+  1. Java中，整数除0会产生一个异常，但浮点数除0会得到无穷大或者NaN值。
+  2. strictfp 对方法声明时表示该方法严格按照浮点运算，也就是中间过程不截断处理，这种在80位运算器下会有作用，毕竟double类永远为64位。
+     对类进行strictfp声明时，表示所有方法都严格按照浮点运算进行，风险是可能会产生溢出。
+  3. if    double + ? = double
+    else   float + ? = float
+    else   long + ? = long
+    else   int + ? = int
+  4. 强制类型转化可能会失精度： double x = 1.234； int y = （int）x； x为1；
+  
+  
   
 
