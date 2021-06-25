@@ -10,5 +10,6 @@
   可以添加任意多的注释，而不必担心java程序的膨胀。
 # Java 强类型语言
   1. 强类型语言意味： 必须为每一个变量指定类型。
-  2，8种基本类型： boolean（0 byte），byte（1 byte， 8位）， char, short(2 byte)， int, float（4 byte）， doule, long(8 byte)
+  2. 8种基本类型： boolean（0 byte），byte（1 byte， 8位）， char, short(2 byte)， int, float（4 byte）， doule, long(8 byte). 4整型，2浮点类型，1字符类型。
+  
 
