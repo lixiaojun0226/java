@@ -27,7 +27,14 @@
     else   long + ? = long
     else   int + ? = int
   4. 强制类型转化可能会失精度： double x = 1.234； int y = （int）x； x为1；
-  
+# Java 字符串
+  不可更改字符串： *java将各种字符串存储于公共池中，字符串变量指向存储池中相应的位置。如果复制一个字符串变量，原始字符串和复制的字符串共享相同的字符。
+  字符串是否相等： s.equals(t) or "hello".equals(t) and "Hello".equalsIgnoreCase("hello")
+  绝不能用 == 来判断两个字符串是否相等。  == 表示两个字符串是否放在同一位置。
+  String s = "hello"
+  if (s == "hello") 
+  if (s.substring(0, 3) == "hel") 有可能为false
+  因为java只是将字符串字面值共享，我的理解是单个固定的字符串值，但拼接或sub的子串是不共享的
   
   
 
